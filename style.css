@@ -68,3 +68,39 @@ body{
         width: 500px;
         padding-left: 160px;
     }
+   
+/*-------------
+        adding main style
+     --------------*/
+     main{
+         background-color: rgb(255, 255, 255);
+     }
+     .player{
+         display: grid;
+         grid-template-columns:repeat(3,1fr);
+         grid-row-gap:5px;
+         width: 1050px;
+         grid-column-gap: 20px;
+         grid-row-gap:20px;
+         padding:40px 150px 40px 137px;
+         
+     }
+     article{
+         height: 474px;
+         width: 330px;
+        background-color: white;
+        padding: 10px 10px 25px 10px;
+        box-shadow: 5px 5px 30px 3px rgb(202, 201, 201);
+        
+        
+     }
+     .player-img img{
+         height: 256px;
+         width: 300px;
+     }
+     .player-info h3{
+         font-size: 28px;
+     }
+     .player-info p{
+         color: #6C6C6C;
+     }
