@@ -137,3 +137,54 @@ body{
          width: 567px;
          
      }
+     /*-------------
+        adding upcoming-match style
+     --------------*/
+     .section-header{
+         font-size: 40px;
+         text-align: center;
+     }
+     .all-match{
+        background-color: #E02C6D;
+        width:1164px ;
+        margin-left: 90px;
+        display: grid;
+        grid-template-columns: repeat(3,1fr);
+        grid-row-gap:27px;
+        margin-bottom: 30px;
+        padding-top: 10px;
+        padding-bottom: 10px;
+     }
+     .match{
+         background-color: rgb(236, 225, 198);
+         width: 320px;
+         height: 230px;
+         border-radius: 10px;
+         padding-left: 30px;
+         margin-left: 20px;
+         margin-top: 5px;
+        
+        
+     }
+     .date-time{
+        display: flex;
+        align-content: center;
+        align-items: center; 
+     }
+     .match-heading,.date,.time{
+         display: flex;
+         align-content: center;
+         align-items: center;
+         
+     }
+     .football-icon , .date-img,.time-img{
+         font-size: 40px;
+         
+     }
+     .heading-text,.date-text h3,.time-text{
+         font-size: 20px;
+         padding-left: 10px;
+     }
+     .text{
+        font-size: 20px;
+     }
