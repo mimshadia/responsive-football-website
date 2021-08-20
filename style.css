@@ -3,3 +3,68 @@ body{
     padding: 0;
     font-family: 'Poppins', sans-serif;
 }
+/*-------------
+        adding header style
+     --------------*/
+    header{
+        width: auto;
+        background-color:#2D25A0;
+        padding-top: 44px;
+        padding-left: 100px;
+    }
+    nav{
+        display: flex;
+        justify-content:space-between;
+        height: 44px;
+        width: 1164px;
+        align-content: center;
+        align-items: center;
+    }
+    .menu a{
+        text-decoration: none;
+        color: white;
+        font-size: 16px;
+        padding: 10px 25px 10px 20px;
+    }
+    .btn{
+        display: flex;
+        background-color: #E02C6D;
+        height: 44px;
+        width: 123px;
+        align-content: center;
+        align-items: center;
+    }
+    .sub-btn{
+        height: 44px;
+        width: 168px;
+    }
+    .btn-icon{
+        font-size:24px;
+        color: white;
+        padding-left: 20px;
+    }
+    .btn-text{
+        font-size: 16px;
+        color: white;
+        padding-left: 10px;
+        font-weight: lighter;
+    }
+    .btn-p{
+        padding-left: 20px;
+    }
+    .header-section{
+        display: flex;
+        padding-top: 55px;
+        padding-bottom: 145px;
+        
+    }
+    .header-text{
+        font-size: 40px;
+        color: white;
+        
+    }
+    .header-img img{
+        height: 438px;
+        width: 500px;
+        padding-left: 160px;
+    }
