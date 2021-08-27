@@ -25,6 +25,7 @@ body{
         color: white;
         font-size: 16px;
         padding: 10px 25px 10px 20px;
+        font-weight: bold;
     }
     .btn{
         display: flex;
@@ -59,7 +60,7 @@ body{
         
     }
     .header-text{
-        font-size: 40px;
+        font-size: 50px;
         color: white;
         
     }
@@ -106,9 +107,10 @@ body{
          padding-left: 15px;
      }
      .player-info p{
-         color: #6C6C6C;
+         color: #777777;
          padding-left: 15px;
          font-size: 16px;
+         font-weight: 800;
         
      }
      /*-------------
@@ -124,6 +126,7 @@ body{
         padding-right: 120px;
         padding-bottom: 139px;
         
+        
      }
      .heighlight-text h1{
         font-size: 48px;
@@ -131,6 +134,7 @@ body{
      .heighlight-text p{
         font-size: 16px;
         color: #6C6C6C;
+        font-weight: 800;
      }
      .heighlights-img img{
          height:427px ;
@@ -140,36 +144,46 @@ body{
      /*-------------
         adding upcoming-match style
      --------------*/
+     
      .section-header{
          font-size: 40px;
          text-align: center;
      }
      .all-match{
-        background-color: #E02C6D;
-        width:1164px ;
+        background-color:cadetblue;
+        width:1000px ;
         margin-left: 90px;
         display: grid;
         grid-template-columns: repeat(3,1fr);
-        grid-row-gap:27px;
-        margin-bottom: 30px;
+        grid-row-gap:10px;
+        margin-bottom: 50px;
         padding-top: 10px;
         padding-bottom: 10px;
+        border-radius: 10px;
+        align-items: center;
+        align-content: center;
+        margin-left: 170px;
+        padding-right: 5px;
      }
      .match{
          background-color: rgb(236, 225, 198);
-         width: 320px;
-         height: 230px;
+         width: 290px;
+         height: 150px;
          border-radius: 10px;
          padding-left: 30px;
-         margin-left: 20px;
+         margin-left: 10px;
          margin-top: 5px;
-        
+         line-height: 10px;
         
      }
+     
      .date-time{
         display: flex;
         align-content: center;
         align-items: center; 
+     }
+     .date-time h3{
+            line-height: 2px;
      }
      .match-heading,.date,.time{
          display: flex;
@@ -178,13 +192,121 @@ body{
          
      }
      .football-icon , .date-img,.time-img{
-         font-size: 40px;
+         font-size: 30px;
          
      }
      .heading-text,.date-text h3,.time-text{
-         font-size: 20px;
+         font-size: 16px;
          padding-left: 10px;
+         /* line-height: 20px; */
      }
      .text{
         font-size: 20px;
+
      }
+     /*-------------
+        adding  WordCup Champion style
+     --------------*/
+     .champions{
+         background-color: rgba(145, 109, 109, 0.274);
+         display: grid;
+         grid-template-columns: repeat(3,1fr);
+         width: 1070px ;
+         grid-row-gap: 25px;
+         padding-top: 15px;
+         align-items: center;
+         align-content: center;
+         padding-left: 25px;
+         margin-left: 125px;
+         padding-bottom: 15px;
+         border-radius: 15px;
+         margin-bottom: 20px;
+     }
+     .year-winner{
+        background-color: aqua;
+        width: 325px;
+        height: 130px; 
+        padding-top: 10px; 
+        padding-left: 10px;
+        font-weight: bolder;
+        border-radius: 15px;
+        
+     }
+     
+     .winner , .year , .runner-up{
+         height: 35px;
+         display: flex;
+         align-items: center;
+        align-content: center;
+     }
+     .stdi h3{
+         height: 20px;
+         font-size: 20px;
+
+     }
+     .winner-text h3{
+         font-size: 20px;
+         padding-left: 5px;
+         margin-top: 0;
+         padding-top: 0;
+     }
+    .tropy,.fas{
+        font-size: 25px;
+        padding-left: 5px;
+        
+    }
+    .fa-trophy{
+        color: rgb(235, 220, 18);
+    }
+    .year,.runner-up h3{
+        font-size: 20px;
+        padding-left: 5px;
+    }
+    .fa-sad-tear{
+        font-size: 25px;
+        padding-left: 5px;
+    }
+    /*-------------
+    adding  footer style
+ --------------*/
+ footer{
+     display: grid;
+     justify-content: center;
+     align-items: center;
+     align-content: center;
+     padding-bottom: 100px;
+     padding-top: 250px;
+ }
+ .logo img{
+     height:110px ;
+     width:483px ;
+    
+ }
+ .socal-icon{
+     padding-left: 170px;
+ }
+ .socal-icon img{
+     height: 32px;
+     width: 32px;
+     padding-left: 10px;
+    
+     
+ }
+ .copyright{
+     height: 31px;
+     width:auto;
+     display: flex;
+     align-content: center;
+     align-items: center;
+     padding-left: 100px;
+     padding-top: 40px;
+
+ }
+ .copyright h2{
+     font-weight:600;
+ }
+ .fa-copyright{
+     font-size: 20px;
+     padding-left: 5px;
+     padding-right: 5px;
+ }
