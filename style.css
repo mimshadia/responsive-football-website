@@ -2,6 +2,8 @@ body{
     margin: 0;
     padding: 0;
     font-family: 'Poppins', sans-serif;
+    overflow-x: hidden;
+   
 }
 /*-------------
         adding header style
@@ -11,6 +13,11 @@ body{
         background-color:#2D25A0;
         padding-top: 44px;
         padding-left: 100px;
+        overflow-x: hidden;
+    }
+    .fa-bars{
+        color: white;
+        display: none;
     }
     nav{
         display: flex;
@@ -58,16 +65,35 @@ body{
         padding-top: 55px;
         padding-bottom: 145px;
         
-    }
-    .header-text{
-        font-size: 50px;
-        color: white;
         
     }
+    .header-text{
+        font-size: 40px;
+        color: white;
+        transition:font-size 3s, transform 3s;
+        position: relative;
+        overflow: hidden;
+        /* width: 50%; */
+        overflow: hidden;
+        
+    }
+    .header-text:hover{
+        font-size: 50px;
+        transition:font-size 3s, transform 3s;
+       
+
+    }
+    
+    .half-width{
+        width: 50%;
+    }
+    
     .header-img img{
-        height: 438px;
-        width: 500px;
-        padding-left: 160px;
+        height: 390px;
+        width: 430px;
+        padding-left: 110px;
+        
+        
     }
    
 /*-------------
@@ -84,6 +110,7 @@ body{
          grid-column-gap: 20px;
          grid-row-gap:20px;
          padding:50px 150px 40px 144px;
+         overflow-x: hidden;
          
      }
      article{
@@ -132,6 +159,8 @@ body{
         font-size: 48px;
      }
      .heighlight-text p{
+         height: 113px;
+         width: 404px;
         font-size: 16px;
         color: #6C6C6C;
         font-weight: 800;
@@ -309,4 +338,165 @@ body{
      font-size: 20px;
      padding-left: 5px;
      padding-right: 5px;
+ }
+  /*-------------
+    adding  small device style
+ --------------*/
+ @media only screen and (max-width: 688px){
+     body{
+         
+         width: 411px;
+
+     }
+     ::-webkit-scrollbar { 
+        display: none; 
+    }
+    
+      /*-------------
+    adding  header style
+ --------------*/
+     .header-section{
+         flex-direction: column;
+         padding-bottom:60px;
+         width: 360px;
+     }
+     header{
+         width:401px;
+        
+         display: block;
+         padding-left: 10px;
+         
+     }
+     .header-text:hover{
+        font-size: 35px;
+        transition:font-size 3s, transform 3s;
+        position: relative;
+       
+
+    }
+     nav{
+         width: 360px;
+         justify-content: space-between;
+         
+     }
+     .fa-bars{
+         display: block;
+         
+        
+     }
+     .header-text{
+         font-size:30px;
+     }
+     
+     .header-img img{
+         height: 259px;
+         width: 300px;
+         padding-left: 35px;
+         padding-top: 50px;
+         align-items: center;
+         justify-content: center;
+     }
+     .menu{
+         display: none;
+     }
+    /*-------------
+    adding  player style
+ --------------*/
+ .player{
+     width: 360px;
+    grid-template-columns: repeat(1,1fr);
+    padding: 50px 10px 5px 40px;
+ }
+ /*-------------
+    adding  heighlight style
+ --------------*/
+ .highlight{
+     flex-direction: column;
+     padding-left: 40px;
+     width:350px; 
+     padding-right: 0px;
+ }
+  .heighlight-text h1{
+      font-size: 25px;
+      width: 300px;
+       }
+  .heighlight-text p{
+           width: 300px;
+           font-size: 13px;
+       }
+   .heighlights-img{
+       width: 350px;
+   }
+   .heighlights-img img{
+       height: 248px;
+       width: 300px;
+       padding-top: 30px;
+       padding-left: 15px;
+   }
+   /*-------------
+    adding  upcoming match style
+ --------------*/
+   .section-header{
+       font-size: 20px;
+       width: 340px;
+       margin-left: 40px;
+   }
+   .all-match{
+       grid-template-columns: repeat(1,1fr);
+       width:350px;
+       margin-left: 25px;
+       padding-right: 0px;
+       justify-content: center;
+       padding-left: 10px;
+   }
+   .champions{
+       grid-template-columns: repeat(1,1fr);
+       width:350px;
+       margin-left: 23px;
+       padding-left: 15px;
+   }
+    /*-------------
+    adding  footer style
+ --------------*/
+ footer{
+     padding-bottom: 300px;
+     width: 340px;
+ }
+ .logo{
+     width: 200px;
+     margin-left: 100px;
+    
+ }
+ .logo img{
+     height: 50px;
+     width: 200px;
+ }
+ .socal-icon{
+    width: 130px;
+    height: 22px;
+    margin-left: 150px;
+    padding-top: 0px;
+
+   
+    padding-left: 0;
+    align-items: center;
+    
+     
+ }
+ .socal-icon img{
+    height: 22px;
+    width: 22px;
+    padding-left: 5px;
+}
+
+ .copyright{
+     width: 250px;
+     
+     font-size: 10px;
+     /* margin-left: 77px;
+      */
+ }
+ .WordCup-Champion , .upcoming-match{
+     width: 350px;
+ }
  }
